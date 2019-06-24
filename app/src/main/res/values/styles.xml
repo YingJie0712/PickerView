@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="DialogCommonStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <!-- 从底部往上推出的动画 -->
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <!-- WheelPicker属性 -->
+    <declare-styleable name="WheelPicker">
+        <attr name="halfVisibleItemCount" format="integer"/>
+        <attr name="itemTextSize" format="dimension"/>
+        <attr name="itemMaximumWidthText" format="string"/>
+        <attr name="itemTextColor" format="color"/>
+        <attr name="textGradual" format="boolean"/>
+        <attr name="selectedTextColor" format="color"/>
+        <attr name="selectedTextSize" format="dimension"/>
+        <attr name="currentItemPosition" format="integer"/>
+        <attr name="itemWidthSpace" format="dimension"/>
+        <attr name="itemHeightSpace" format="dimension"/>
+        <attr name="zoomInSelectedItem" format="boolean"/>
+        <attr name="wheelCyclic" format="boolean"/>
+        <attr name="wheelCurtain" format="boolean"/>
+        <attr name="wheelCurtainColor" format="color"/>
+        <attr name="wheelCurtainBorder" format="boolean"/>
+        <attr name="wheelCurtainBorderColor" format="color"/>
+        <attr name="indicatorText" format="string"/>
+        <attr name="indicatorTextSize" format="dimension"/>
+        <attr name="indicatorTextColor" format="color"/>
+    </declare-styleable>
+</resources>
